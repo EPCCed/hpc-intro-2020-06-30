@@ -26,7 +26,7 @@ run where and when.
 
 The following illustration compares these tasks of a job scheduler to a waiter in a restaurant.
 If you can relate to an instance where you had to wait for a while in a queue to get in to a 
-popular restaurant, then you may now understand why sometimes your job do not start instantly
+popular restaurant, then you may now understand why sometimes your jobs do not start instantly
 as in your laptop.
 
 {% include figure.html max-width="75%" file="/fig/restaurant_queue_manager.svg"
