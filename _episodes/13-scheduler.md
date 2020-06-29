@@ -202,7 +202,7 @@ about how to make sure that you're using resources effectively in a later episod
 
 > ## Submitting resource requests
 >
-> Submit a job that will use 1 full node and 5 minutes of walltime.
+> Submit a job that will use 2 full nodes and 10 minutes of walltime.
 {: .challenge}
 
 {% include /snippets/13/env_challenge.snip %}
@@ -266,7 +266,7 @@ walltime so that it runs long enough for you to cancel it before it is killed!).
 ```
 {: .output}
 
-Now cancel the job with it's job number. Absence of any job info indicates that the job has been
+Now cancel the job with its job number. Absence of any job info indicates that the job has been
 successfully cancelled.
 
 ```
