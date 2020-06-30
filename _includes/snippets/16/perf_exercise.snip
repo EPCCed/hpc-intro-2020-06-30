@@ -70,4 +70,26 @@
 > > worse parallel efficiency may also be useful if the time to solution is an overriding factor.
 > >
 > {: .solution}
+> ## Excluding the IO overhead
+>
+> Now use your *Calculation times* (not the overall run times) to
+> compute the speedup and efficiency. How well do you think the
+> calculation part has been parallelised?
+> > ## Solution
+> >
+> > The table below gives example results for {{ site.host_name }} based on the example 
+> > runtimes given in the solution above.
+> >
+> > | Cores      | Calculation time (s) | Ideal speedup | Actual speedup | Parallel efficiency |
+> > |------------|----------------------|---------------|----------------|---------------------|
+> > |	1 (serial)	|	5.409711	|	1	|	1	|	100%
+> > |	2	|	2.78805	|	2	|	1.94032065422069	|	97%
+> > |	4	|	1.482274	|	4	|	3.64960257010512	|	91%
+> > |	8	|	0.793194	|	8	|	6.82016127202173	|	85%
+> > |	12	|	0.530674	|	12	|	10.194038147714	|	85%
+> > |	24	|	0.267975	|	24	|	20.1873719563392	|	84%
+> > |	48	|	0.136709	|	48	|	39.5709938628766	|	82%
+> > |	96	|	0.072191	|	96	|	74.9360862157333	|	78%
+> >
+> {: .solution}
 {: .challenge}
