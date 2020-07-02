@@ -26,12 +26,14 @@
 > > The table below gives example results for {{ site.host_name }} based on the example 
 > > runtimes given in the solution above.
 > >
+> > | Cores      | Overall run time (s) | Ideal speedup | Actual speedup | Parallel efficiency |
+> > |------------|----------------------|---------------|----------------|---------------------|
 > > |	1	|	5.544246	|	1	|	1	|	100%	|
 > > |	2	|	2.917452	|	2	|	1.90037265394598	|	95%	|
 > > |	4	|	1.609339	|	4	|	3.44504545033706	|	86%	|
 > > |	8	|	0.924753	|	8	|	5.99538038806038	|	75%	|
 > > |	12	|	0.665114	|	12	|	8.33578303869713	|	69%	|
-> > |	24	|	0.40722	|	24	|	13.614866656844	|	57%	|
+> > |	24	|	0.40722		|	24	|	13.614866656844	|	57%	|
 > > |	48	|	0.315862	|	48	|	17.5527477189406	|	37%	|
 > > |	96	|	0.239602	|	96	|	23.1393978347426	|	24%	|
 > >
@@ -89,3 +91,6 @@
 > >
 > {: .solution}
 {: .challenge}
+{% include figure.html url="" max-width="50%" file="/fig/speedup.png" alt="sharpen speedup" caption="" %}
+{% include figure.html url="" max-width="50%" file="/fig/efficiency.png" alt="sharpen efficiency" caption="" %}
+{% include figure.html url="" max-width="50%" file="/fig/efficiencylogcpu.png" alt="sharpen efficiency (log x-scale)" caption="" %}

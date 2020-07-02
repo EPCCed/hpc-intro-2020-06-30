@@ -20,14 +20,16 @@
 > | 12         |                      |                      |             |                    | 
 > | 24         |                      |                      |             |                    | 
 > | 48         |                      |                      |             |                    |              
-> | 96        |                      |                      |             |                    | 
+> | 96        |                      |                      |             |                 |
 > 
 > Look at your results – do they make sense? Given the structure of the code, you would
-> expect the IO time to be roughly constant, and the performance of the calculation to increase
+> expect the IO time to be roughly constant and the performance of the calculation to increase
 > linearly with the number of cores: this would give a roughly constant figure for the total core
 > time. Is this what you observe?
 > > ## Solution
 > >
+> > | Cores      | Overall run time (s) | Calculation time (s) | IO time (s) | Total core seconds |
+> > |------------|----------------------|----------------------|-------------|--------------------|
 > > |	1	|	5.544246	|	5.410836	|	0.13341	|	5.410836	|
 > > |	2	|	2.917452	|	2.804676	|	0.112776	|	5.609352	|
 > > |	4	|	1.609339	|	1.48881	|	0.120529	|	5.95524	|
@@ -37,6 +39,7 @@
 > > |	48	|	0.315862	|	0.136599	|	0.179263	|	6.556752	|
 > > |	96	|	0.239602	|	0.071997	|	0.167605	|	6.911712	|
 > >
-> > {% include figure.html url="" max-width="40%" file="runtime.png" alt="Run times of sharpen exercise" caption="" %}
 > {: .solution}
 {: .challenge}
+{% include figure.html url="" max-width="50%" file="/fig/runtime.png" alt="sharpen runtime" caption="" %}
+{% include figure.html url="" max-width="50%" file="/fig/logruntime.png" alt="log sharpen runtime" caption="" %}
